@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Film</title>
+   <link rel="stylesheet" href="CSS/add.css">
+</head>
+<body>
+  <h2>Add Film</h2>
+  <form action="AddFilm" method="post">
+    <div>
+      <label for="titre">Title:</label>
+      <input type="text" id="titre" name="titre">
+    </div>
+    <div>
+      <label for="description">Description:</label>
+      <textarea id="description" name="description"></textarea>
+    </div>
+    <div>
+      <label for="duree">Duration (minutes):</label>
+      <input type="number" id="duree" name="duree" >
+    </div>
+    <div>
+      <label for="anneeSortie">Release Year:</label>
+      <input type="number" id="anneeSortie" name="anneeSortie">
+    </div>
+    <div>
+      <label for="paysProduction">Production Country:</label>
+      <input type="text" id="paysProduction" name="paysProduction">
+    </div>
+    <div>
+      <label for="acteursPrincipaux">Main Actors:</label>
+      <input type="text" id="acteursPrincipaux" name="acteursPrincipaux">
+    </div>
+    <div>
+      <label for="image">Image URL:</label>
+      <input type="text" id="image" name="image">
+    </div>
+    <div>
+      <label for="genre">Genre:</label>
+      <input type="text" id="genre" name="genre">
+    </div>
+    <div>
+      <label for="note">Rating:</label>
+      <input type="number" id="note" name="note">
+    </div>
+    <button type="submit">Add Film</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,58 @@
+@charset "ISO-8859-1";
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Improve readability with a slightly larger font size */
+body {
+  font-size: 16px;
+}
+
+/* Main table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  border-radius: 8px; /* Add a subtle rounded border */
+}
+
+/* Table header styling */
+th {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Table cell styling */
+td {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+/* Add hover effect on table rows */
+tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* Style even rows with a different background color */
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Add a subtle highlight animation on hover */
+tr:hover {
+  animation: highlight 0.3s ease-in-out;
+}
+
+@keyframes highlight {
+  from { background-color: transparent; }
+  to { background-color: #f0f0f0; }
+}

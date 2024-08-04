@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
+  
+  <!-- Servlet Definitions -->
+  
+  <servlet>
+    <description></description>
+    <display-name>AjouterFilmServlet</display-name>
+    <servlet-name>AjouterFilmServlet</servlet-name>
+    <servlet-class>servlets.AjouterFilmServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>servlets.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>InscriptionServlet</servlet-name>
+    <servlet-class>servlets.InscriptionServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ListerFilmsServlet</servlet-name>
+    <servlet-class>servlets.ListerFilmsServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description></description>
+    <display-name>AccueilServlet</display-name>
+    <servlet-name>AccueilServlet</servlet-name>
+    <servlet-class>servlets.AccueilServlet</servlet-class>
+  </servlet>
+  
+  <!-- Servlet Mappings -->
+  
+  <servlet-mapping>
+    <servlet-name>AjouterFilmServlet</servlet-name>
+    <url-pattern>/AjouterFilmServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>InscriptionServlet</servlet-name>
+    <url-pattern>/InscriptionServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ListerFilmsServlet</servlet-name>
+    <url-pattern>/ListerFilmsServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AccueilServlet</servlet-name>
+    <url-pattern>/Accueil</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Welcome File List -->
+  
+  <display-name>houdifilms</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+</web-app>

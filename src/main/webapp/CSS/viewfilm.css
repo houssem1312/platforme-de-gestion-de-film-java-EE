@@ -1,0 +1,65 @@
+@charset "ISO-8859-1";
+/* Style pour la liste des films */
+.film-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style pour chaque carte de film */
+.film-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.film-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Style pour l'image du film */
+.film-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Style pour le titre du film */
+.film-title {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Style pour la description du film */
+.film-description {
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+/* Style pour les détails du film */
+.film-details {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style pour chaque élément de détail du film */
+.film-details li {
+  margin-bottom: 5px;
+}
+
+/* Style pour les liens "Voir plus" */
+.more-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.more-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,94 @@
+@charset "ISO-8859-1";
+/* Reset default styles for a clean slate */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; /* Modern, clean font choice */
+  background-color: #f0f2f5; /* Light background for better readability */
+}
+
+/* Login container with centered positioning and subtle shadow */
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px; /* Reasonable width for most devices */
+  background-color: #fff; /* White background for form elements */
+  border-radius: 5px; /* Gentle rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 40px; /* Comfortable padding for form elements */
+}
+
+/* Heading with clean font and subtle bottom margin */
+h2 {
+  text-align: center;
+  font-size: 24px; /* Clear and readable heading size */
+  font-weight: normal; /* Natural, non-bold weight */
+  margin-bottom: 20px;
+}
+
+/* Sign-in icon with hover effect (optional) */
+.sign-in-icon {
+  position: absolute;
+  top: 10px; /* Adjust position as needed */
+  right: 10px;
+  color: #ccc; /* Light gray color for initial state */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.sign-in-icon:hover {
+  color: #333; /* Darker gray on hover for better contrast */
+}
+
+/* Form styling for a cohesive and user-friendly experience */
+form {
+  display: flex; /* Align form elements vertically */
+  flex-direction: column; /* Stack elements one below the other */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Consistent spacing between form groups */
+}
+
+label {
+  display: block; /* Make labels occupy full width on small screens */
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333; /* Darker gray for clear labels */
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%; /* Fill container width */
+  padding: 10px;
+  border: 1px solid #ccc; /* Light border for visual separation */
+  border-radius: 3px; /* Subtle rounded corners */
+  box-sizing: border-box; /* Include padding in width calculation */
+  font-size: 16px; /* Consistent and readable input size */
+}
+
+/* Input focus styles for better user feedback */
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #66afe9; /* Blue border on focus for better visibility */
+  outline: none; /* Remove default browser outline */
+}
+
+/* Submit button with clear styling and hover effect */
+.submit-btn {
+  width: 100%; /* Fill container width */
+  padding: 10px 15px;
+  background-color: #3498db; /* Blue color for primary action */
+  color: #fff; /* White text for readability */
+  border: none; /* Remove borders */
+  border-radius: 3px; /* Subtle rounded corners */
+  cursor: pointer; /* Indicate clickable behavior */
+  transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.submit-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
